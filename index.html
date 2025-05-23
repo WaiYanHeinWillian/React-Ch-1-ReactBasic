@@ -20,12 +20,19 @@
     <h1>Hello Ang!</h1>
     <div id="main"></div>
 
+    <!-- This is footer -->
     <footer>Footer</footer>
 </body>
 
 <script type="text/babel">
     const Main = ()=>{
-        return <div>Hello Ang This is Main tag</div>
+        return (
+            // This is main
+            <div className="test-name">
+            Hello Ang This is Main tag
+            <p>Hi There!</p>
+            </div>
+        )
     }
 
     let rootContainer = document.getElementById('main');
