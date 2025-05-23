@@ -26,11 +26,22 @@
 
 <script type="text/babel">
     const Main = ()=>{
+
+        let name="HAHAH";
+        let num=28;
+        let className="ChangeClassName";
+
+        let clickHandler=(e)=>{
+            console.log(e);
+        }
+
         return (
-            // This is main
-            <div className="test-name">
-            Hello Ang This is Main tag
-            <p>Hi There!</p>
+            <div className={className}>
+                <h1>{name.toUpperCase()}</h1>
+                <p>{num}</p>
+                <p>{new Date().toDateString()}</p>
+                
+                <button onClick={clickHandler}>ClickMe</button>
             </div>
         )
     }
